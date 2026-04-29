@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio | Samuel Matías</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+<nav>
+    <a onclick="showPage('home')">Inicio</a>
+    <a onclick="showPage('profile')">Perfil</a>
+    <a onclick="showPage('projects')">Proyectos</a>
+    
+    <a onclick="showPage('process')">Proceso</a>
+    <a onclick="showPage('contact')">Contacto</a>
+</nav>
+
+<div class="container">
+
+<!-- INICIO -->
+<div id="home-page" class="section-content">
+    <header>
+        <div>
+            <h1>SAMUEL MATÍAS<br>MOLANO VALENCIA</h1>
+            <h2>Desarrollador en formación</h2>
+            <p>Creo soluciones eficaces, seguras y modernas enfocadas en resultados reales.</p>
+        </div>
+
+        <!-- TU FOTO (NO MODIFICADA) -->
+        <img src="WhatsApp Image 2026-04-26 at 12.40.46 PM.jpeg" class="profile-pic">
+    </header>
+
+    <div class="section-title">Servicios</div>
+    <div class="card">
+        <p>
+        Desarrollo aplicaciones web, creación de sistemas con Python y diseño soluciones digitales.
+        Creo soluciones eficaces, modernas y adaptadas a cada necesidad.
+        </p>
+    </div>
+</div>
+
+<!-- PROYECTOS -->
+<div id="projects-page" class="section-content" style="display:none;">
+    <div class="section-title">Proyectos</div>
+
+    <div class="card">
+        <h3>Numix</h3>
+        <p>
+        Plataforma interactiva para aprender matemáticas de forma divertida,
+        con diferentes tipos de juegos que fortalecen el pensamiento lógico.
+        </p>
+        <a href="https://numix-studio-three.vercel.app/" target="_blank">Ver proyecto</a>
+    </div>
+
+    <div class="card">
+        <h3>Frutería Web</h3>
+        <p>
+        Sistema web para gestionar ventas, productos y control básico de inventario
+        en un negocio tipo frutería, facilitando la organización comercial.
+        </p>
+        <a href="https://fruteria-nine.vercel.app/" target="_blank">Ver proyecto</a>
+    </div>
+</div>
+
+<!-- PERFIL -->
+<div id="profile-page" class="section-content" style="display:none;">
+    <div class="section-title">Mi Perfil Estudiantil</div>
+
+    <div class="card">
+        <h3>Misión</h3>
+        <p>
+        Mi misión es desarrollar soluciones tecnológicas eficientes que ayuden a resolver problemas reales,
+        aplicando mis conocimientos en programación y mejorando continuamente mis habilidades.
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>Visión</h3>
+        <p>
+        Ser un desarrollador reconocido por la calidad de mis proyectos y mi capacidad de innovación,
+        participando en proyectos importantes y creciendo profesionalmente en el área del software.
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>Informe Personal</h3>
+        <p>
+        Soy una persona responsable, disciplinada y comprometida con el aprendizaje.
+        Me gusta resolver problemas, crear proyectos y mejorar constantemente.
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>Habilidades</h3>
+        <div class="skills-grid">
+            <div class="skill-box"><i class="fab fa-html5"></i> HTML</div>
+            <div class="skill-box"><i class="fab fa-css3-alt"></i> CSS</div>
+            <div class="skill-box"><i class="fab fa-python"></i> Python</div>
+        </div>
+    </div>
+</div>
+
+<!-- PROCESO -->
+<div id="process-page" class="section-content" style="display:none;">
+    <div class="section-title">Proceso de Trabajo</div>
+
+    <div class="card">
+    <p>
+    Mi proceso inicia con la idea, luego diseño la estructura y finalmente desarrollo el código.
+    Cada línea cumple una función importante dentro del sistema.
+    </p>
+
+    <h4>Ejemplo 1 (HTML):</h4>
+    <pre>&lt;h1&gt;Hola Mundo&lt;/h1&gt;</pre>
+    <p>
+    Esta línea crea un título principal en una página web.
+    &lt;h1&gt; abre la etiqueta, el texto es lo que se muestra y &lt;/h1&gt; la cierra.</p>
+
+    <h4>Ejemplo 2 (HTML):</h4>
+    <pre>&lt;p&gt;Este es un párrafo&lt;/p&gt;</pre>
+    
+    <p>Sirve para mostrar texto en forma de párrafo dentro de una página web.</p>
+
+    <h4>Ejemplo 3 (HTML):</h4>
+    <pre>&lt;a href="https://google.com"&gt;Ir a Google&lt;/a&gt;</pre>
+    
+    <p>Esta línea crea un enlace. Al hacer clic, el usuario será dirigido a otra página web.</p>
+
+    <h4>Ejemplo 4 (Python):</h4>
+    <pre>print("Hola mundo")</pre>
+     
+    <p>Este código en Python imprime un mensaje en la consola. Es uno de los primeros ejemplos al aprender programación.</p>
+    
+    </div>
+</div>
+
+<!-- CONTACTO -->
+<div id="contact-page" class="section-content" style="display:none;">
+    <div class="section-title">Contacto</div>
+
+    <div class="card" style="text-align:center;">
+        <h2>🔥 ¡Hagamos algo increíble!</h2>
+        <p>
+        Estoy listo para trabajar contigo y convertir ideas en proyectos reales.
+        Contáctame y empecemos.
+        </p>
+
+        <h3><i class="fas fa-envelope"></i> SamuelMolano785@gmail.com</h3>
+        <h3><i class="fas fa-phone"></i> +57 311 332 6116</h3>
+
+        <div class="social-links">
+            <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+            <a href="#"><i class="fab fa-tiktok"></i> TikTok</a>
+            <a href="#"><i class="fab fa-github"></i> GitHub</a>
+        </div>
+    </div>
+</div>
+
+</div>
+
+<script>
+function showPage(pageId) {
+    document.getElementById('home-page').style.display = 'none';
+    document.getElementById('projects-page').style.display = 'none';
+    document.getElementById('profile-page').style.display = 'none';
+    document.getElementById('process-page').style.display = 'none';
+    document.getElementById('contact-page').style.display = 'none';
+
+    document.getElementById(pageId + '-page').style.display = 'block';
+}
+</script>
+
+</body>
+</html>
